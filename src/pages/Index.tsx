@@ -52,7 +52,7 @@ const Index = () => {
   }
 
   const handleLogin = () => {
-    if (password === 'ihlpuck1337') {
+    if (password === 'ihlpuck') {
       setIsAdmin(true)
       setShowLogin(false)
       toast({ title: 'Вход выполнен', description: 'Добро пожаловать в админ-панель' })
