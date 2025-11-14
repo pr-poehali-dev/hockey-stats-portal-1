@@ -1,0 +1,32 @@
+{
+  "tests": [
+    {
+      "name": "Get all teams",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Create team",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Test Team",
+        "logo_url": null,
+        "games_played": 10,
+        "wins": 5,
+        "losses": 3,
+        "ot_losses": 2,
+        "goals_for": 25,
+        "goals_against": 20,
+        "position": 0
+      },
+      "expectedStatus": 201,
+      "expectedBody": {
+        "name": "Test Team",
+        "games_played": 10
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
